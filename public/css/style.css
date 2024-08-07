@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.left-section, .right-section {
+    padding: 30px;
+}
+.left-section {
+    flex: 2;
+}
+.right-section {
+    background-color: #212529;
+    color: #fff;
+    flex: 1;
+    padding-top:140px;
+}
+.right-section a {
+    color: #fff;
+    text-decoration: none;
+}
+.right-section a:hover {
+    text-decoration: underline;
+}
+.section-title {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.btn-submit {
+    background-color: #212529;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.btn-submit:hover {
+    background-color: #333;
+}
+.btn-light {
+    color: #212529;
+    background-color: #f8f9fa;
+    border: 1px solid #212529;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn-light:hover {
+    color: #fff;
+    background-color: #212529;
+}
+.form-group label {
+    font-weight: bold;
+}
