@@ -3,6 +3,7 @@
 <head>
     <title>CV List</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -68,11 +69,15 @@
                     <a href="{{ route('cv.show3', $cv->id) }}" class="btn btn-info">3</a>
                 </td>
                 <td>
-                    <a href="{{ route('cv.edit', $cv->id) }}" class="btn btn-warning">Edit</a>
+                    <a href="{{ route('cv.edit', $cv->id) }}" class="btn btn-warning">
+                        <i class="fas fa-edit"></i>
+                    </a>
                     <form action="{{ route('cv.destroy', $cv->id) }}" method="POST" style="display:inline-block;">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-danger">Delete</button>
+                        <button type="submit" class="btn btn-danger">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
                     </form>
                 </td>
             </tr>
