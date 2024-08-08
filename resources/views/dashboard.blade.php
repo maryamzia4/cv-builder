@@ -137,11 +137,11 @@
         var categoryChart = new Chart(ctx, {
             type: 'pie',
             data: {
-                labels: @json($categoriesLabels), // Use the categories labels from the backend
+                labels: @json($categoriesLabels), 
                 datasets: [{
                     label: 'CV Categories',
-                    data: @json($categoriesValues), // Use the categories values from the backend
-                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'], // Colors for each category
+                    data: @json($categoriesValues), 
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'], 
                 }]
             },
             options: {
